@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: #eeeeee;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 90%;
+  /* border: 1px solid red; */
+  margin: auto auto;
+}
+
+input {
+  height: 120px;
+  font-size: 2rem;
+  width: 80%;
+  padding-left: 10%;
+}
+
+button.add {
+  width: 20%;
+  cursor: pointer;
+  background: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  height: 120px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid green;
+  box-shadow: green;
+}
+main {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: auto auto;
+  /*  border: 1px solid blue; */
+  padding-top: 40px;
+}
+
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 80px;
+  width: 100%;
+  box-shadow: #ccc;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.item.clicado {
+  background: #d4f6d9;
+}
+
+.item.clicado .item-nome {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.item-icone {
+  flex: 20%;
+  /* border: 1px solid orangered; */
+  text-align: center;
+  font-size: 2rem;
+}
+
+.item-nome {
+  flex: 55%;
+  /* border: 1px solid deepskyblue; */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-botao {
+  flex: 25%;
+  /*  border: 1px solid red; */
+}
+
+.delete {
+  background: red;
+  color: white;
+  padding: 10px;
+  height: 80px;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid red;
+}
+
+.mdi-check-circle {
+  color: green;
+}
